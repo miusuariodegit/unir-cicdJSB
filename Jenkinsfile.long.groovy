@@ -137,15 +137,15 @@ pipeline {
 
     post {
         success {
-            emailext subject: "Pipeline successful", to: "devs@unir.net", body: "Cuerpo"
+            emailext subject: "Pipeline successful", to: "eligevivirenpaz@hotmail.com", body: "Cuerpo"
             cleanWs()
         }
         unstable {
-            emailext subject: "Pipeline tests not successful", to: "devs@unir.net", body: "Cuerpo"
+            emailext subject: "Pipeline tests not successful", to: "eligevivirenpaz@hotmail.com", body: "Cuerpo"
             cleanWs()
         }
         failure {
-            emailext subject: "Pipeline error", to: "devops@unir.net,devs@unir.net", body: "Cuerpo"
+            emailext subject: "Pipeline error", to: "devops@unir.net,eligevivirenpaz@hotmail.com", body: "Cuerpo"
             cleanWs()
         }
     }
