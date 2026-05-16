@@ -13,7 +13,7 @@ pipeline {
     }
 
     environment {
-        AN_ACCESS_KEY = credentials('my-predefined-secret-text')
+        //AN_ACCESS_KEY = credentials('my-predefined-secret-text')
         PULL_REQUEST = "pr-${env.CHANGE_ID}"
         IMAGE_TAG = "${env.PULL_REQUEST}"
     }
